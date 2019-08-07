@@ -1,0 +1,171 @@
+<style>
+  body {
+    margin: 0;
+
+  }
+
+  .btn-secondary {
+    background-color: #007bff !important;
+    width: 200px !important;
+  }
+
+  .btn-warning {
+    position: absolute;
+    margin-left: 1020px;
+    margin-top: 100px;
+    height: 98px;
+    width: 120px;
+  }
+
+  .dropdown1 {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 160px;
+  }
+
+  .dropdown2 {
+    position: absolute;
+    margin-left: 390px;
+    margin-top: 160px;
+  }
+
+  .dropdown3 {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 160px;
+  }
+
+  .dropdown4 {
+    position: absolute;
+    margin-left: 810px;
+    margin-top: 160px;
+  }
+
+  .btn-group {
+    position: absolute;
+    width: 830px !important;
+    margin-top: 100px;
+    margin-left: 180px;
+  }
+
+  .navbar {
+    height: 100px !important;
+  }
+</style>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>대선후보</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <div style="height:688px; width:1280px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="{% url 'index' %}" style="font-size:50px; color: white;">대선후보</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="margin-left:15px; font-size:25px; margin-top: 15px;">
+          <a class="nav-item nav-link active" href="{% url 'index' %}">HOME</a>
+          <a class="nav-item nav-link active" href="#">CATEGORY2</a>
+          <a class="nav-item nav-link active" href="#">CATEGORY3 </a>
+          <a class="nav-item nav-link active" href="#">CATEGORY4</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container1">
+      <div class="dropdown1">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          SUB CATEGORY1
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록1</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록2</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록3</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록4</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록5</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록6</a>
+        </div>
+      </div>
+      <div class="dropdown2">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          SUB CATEGORY2
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록1</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록2</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록3</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록4</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록5</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록6</a>
+        </div>
+      </div>
+      <div class="dropdown3" style="color: ">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          SUB CATEGORY3
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록1</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록2</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록3</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록4</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록5</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록6</a>
+        </div>
+      </div>
+      <div class="dropdown4">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          SUB CATEGORY4
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록1</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록2</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록3</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록4</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록5</a>
+          <a class="dropdown-item" style="width: 200px;" href="#">세부목록6</a>
+        </div>
+      </div>
+      <button type="button" class="btn btn-warning">RANDOM!</button>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          MAIN CATEGORY
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" style="width: 830px;" href="#">세부목록1</a>
+          <a class="dropdown-item" style="width: 830px;" href="#">세부목록2</a>
+          <a class="dropdown-item" style="width: 830px;" href="#">세부목록3</a>
+          <a class="dropdown-item" style="width: 830px;" href="#">세부목록4</a>
+          <a class="dropdown-item" style="width: 830px;" href="#">세부목록5</a>
+          <a class="dropdown-item" style="width: 830px;" href="#">세부목록6</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="result" style="margin-left: 180px; margin-top: -360px; width:830px; height:330px; background-color: grey;">
+    <h1 style="color: white; padding-top: 18%; margin-left: 35%;">RESULT BOARD</h1>
+  </div>
+</body>
+
+
+</html>
