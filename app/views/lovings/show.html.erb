@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @loving.content %>
+</p>
+
+<p>
+  <strong>Gneder:</strong>
+  <%= @loving.gneder %>
+</p>
+
+<p>
+  <strong>Ask:</strong>
+  <%= @loving.ask %>
+</p>
+
+<p>
+  <strong>Attitude:</strong>
+  <%= @loving.attitude %>
+</p>
+
+<%= link_to 'Edit', edit_loving_path(@loving) %> |
+<%= link_to 'Back', lovings_path %>

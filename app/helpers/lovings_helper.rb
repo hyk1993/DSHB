@@ -1,0 +1,2 @@
+module LovingsHelper
+end

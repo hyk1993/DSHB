@@ -1,0 +1,37 @@
+<%= form_with(model: loving, local: true) do |form| %>
+  <% if loving.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(loving.errors.count, "error") %> prohibited this loving from being saved:</h2>
+
+      <ul>
+      <% loving.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gneder %>
+    <%= form.number_field :gneder %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ask %>
+    <%= form.number_field :ask %>
+  </div>
+
+  <div class="field">
+    <%= form.label :attitude %>
+    <%= form.number_field :attitude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,26 @@
+
+목록<br>
+
+<%= form_for( Check.new , url: checks_create_path) do |f| %>
+  <%=f.label :first, '질문' %>
+  <%= f.select(:first) do %>
+    <% [['의문문', 1], ['평서문', 2]].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %><br>
+  <%=f.label :second, '존대여부' %>
+  <%= f.select(:second) do %>
+    <% [['존대', 1], ['반말', 2]].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %><br>
+  <%=f.label :third, '시간대' %>
+  <%= f.select(:third) do %>
+    <% [['낮', 1], ['밤', 2], ['무관', 3]].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %><br>
+
+  <%=f.submit '결과' %>
+  
+<% end %>

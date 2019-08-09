@@ -1,0 +1,2 @@
+class Loving < ApplicationRecord
+end
