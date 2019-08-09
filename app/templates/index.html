@@ -1,171 +1,160 @@
-<style>
-  body {
-    margin: 0;
-
-  }
-
-  .btn-secondary {
-    background-color: #007bff !important;
-    width: 100% !important;
-  }
-
-  .btn-warning {
-    position: absolute;
-    margin-left: 1020px;
-    margin-top: 100px;
-    height: 98px;
-    width: 120px;
-  }
-
-  .dropdown1 {
-    position: absolute;
-    margin-left: 180px;
-    margin-top: 160px;
-  }
-
-  .dropdown2 {
-    position: absolute;
-    margin-left: 390px;
-    margin-top: 160px;
-  }
-
-  .dropdown3 {
-    position: absolute;
-    margin-left: 600px;
-    margin-top: 160px;
-  }
-
-  .dropdown4 {
-    position: absolute;
-    margin-left: 810px;
-    margin-top: 160px;
-  }
-
-  .btn-group {
-    position: absolute;
-    width: 830px !important;
-    margin-top: 100px;
-    margin-left: 180px;
-  }
-
-  .navbar {
-    height: 100px !important;
-  }
-</style>
-<!DOCTYPE html>
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
+	<head>
+		<title>Big Picture by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'blog/assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'blog/assets/css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
 
-<head>
-  <meta charset="utf-8">
-  <title>대선후보</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-</head>
+		<!-- Header -->
+			<header id="header">
+				<h1>Big Picture</h1>
+				<nav>
+					<ul>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#one">What I Do</a></li>
+						<li><a href="#two">Who I Am</a></li>
+						<li><a href="#work">My Work</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
 
-<body>
-  <div style="height:688px; width:1280px;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="{% url 'index' %}" style="font-size:50px; color: white;">대선후보</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav" style="margin-left:15px; font-size:25px; margin-top: 15px;">
-          <a class="nav-item nav-link active" href="{% url 'index' %}">HOME</a>
-          <a class="nav-item nav-link active" href="#">CATEGORY2</a>
-          <a class="nav-item nav-link active" href="#">CATEGORY3 </a>
-          <a class="nav-item nav-link active" href="#">CATEGORY4</a>
-        </div>
-      </div>
-    </nav>
-    <div class="container1">
-      <div class="dropdown1">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          SUB CATEGORY1
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록1</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록2</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록3</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록4</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록5</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록6</a>
-        </div>
-      </div>
-      <div class="dropdown2">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          SUB CATEGORY2
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록1</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록2</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록3</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록4</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록5</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록6</a>
-        </div>
-      </div>
-      <div class="dropdown3" style="color: ">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          SUB CATEGORY3
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록1</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록2</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록3</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록4</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록5</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록6</a>
-        </div>
-      </div>
-      <div class="dropdown4">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          SUB CATEGORY4
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록1</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록2</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록3</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록4</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록5</a>
-          <a class="dropdown-item" style="width: 200px;" href="#">세부목록6</a>
-        </div>
-      </div>
-      <button type="button" class="btn btn-warning">RANDOM!</button>
-      <div class="btn-group">
-        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          MAIN CATEGORY
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" style="width: 830px;" href="#">세부목록1</a>
-          <a class="dropdown-item" style="width: 830px;" href="#">세부목록2</a>
-          <a class="dropdown-item" style="width: 830px;" href="#">세부목록3</a>
-          <a class="dropdown-item" style="width: 830px;" href="#">세부목록4</a>
-          <a class="dropdown-item" style="width: 830px;" href="#">세부목록5</a>
-          <a class="dropdown-item" style="width: 830px;" href="#">세부목록6</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="result" style="margin-left: 180px; margin-top: -360px; width:830px; height:330px; background-color: grey;">
-    <h1 style="color: white; padding-top: 18%; margin-left: 35%;">RESULT BOARD</h1>
-  </div>
-</body>
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content">
+					<header>
+						<h2>Hey.</h2>
+					</header>
+					<p>Welcome to <strong>Big Picture</strong> a responsive site template designed by <a href="https://html5up.net">HTML5 UP</a><br />
+					and released for free under the <a href="https://html5up.net/license">Creative Commons Attribution license</a>.</p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
 
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>What I Do</h2>
+					</header>
+					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
+					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
 
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Who I Am</h2>
+					</header>
+					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
+					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>My Work</h2>
+						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
+						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+					</header>
+
+					<!-- Gallery  -->
+						<div class="gallery">
+							<article class="from-left">
+								<a href="{% static 'blog/images/fulls/01.jpg' %}" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="{% static 'blog/images/fulls/02.jpg' %}" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="{% static 'blog/images/fulls/03.jpg' %}" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="{% static 'blog/images/fulls/04.jpg' %}" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="{% static 'blog/images/fulls/05.jpg' %}" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="{% static 'blog/images/fulls/06.jpg' %}" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
+							</article>
+						</div>
+
+				</div>
+			</section>
+
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content">
+					<header>
+						<h2>Say Hello.</h2>
+						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+					</header>
+					<div class="box">
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
+								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
+								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+							</div>
+							<ul class="actions special">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'blog/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/jquery.poptrox.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/util.js' %}"></script>
+			<script src="{% static 'blog/assets/js/main.js' %}"></script>
+
+	</body>
 </html>
